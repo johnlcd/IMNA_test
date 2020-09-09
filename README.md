@@ -265,16 +265,16 @@ out.pdf: Output plot in pdf format
 
 ### Contact
 #### Author
-> **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**
-> Key Laboratory of Biomedical Information & Genetics Center, School of Life Science and Technology, Xi'an Jiaotong University, Xi'an, Shaanxi Province, 710049, P. R. China
-> [:email:](yangtielin@mail.xjtu.edu.cn) yangtielin@mail.xjtu.edu.cn
+> **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**  
+> Key Laboratory of Biomedical Information & Genetics Center, School of Life Science and Technology, Xi'an Jiaotong University, Xi'an, Shaanxi Province, 710049, P. R. China  
+> [:email:](yangtielin@mail.xjtu.edu.cn) yangtielin@mail.xjtu.edu.cn  
 <br>
 
 ### Maintainer
-> **Yi-Xiao Chen**
+> **Yi-Xiao Chen**  
 > You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
   when you have any questions, suggestions, comments, etc.
-> Please describe in details, and attach your command line and log messages if possible.
+> Please describe in details, and attach your command line and log messages if possible.  
 <br>
 
 
