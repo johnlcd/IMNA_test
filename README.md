@@ -3,14 +3,17 @@
 **`IMNA`** is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
 <b>IMNA</b> is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
 
-###  2 Download and Install
+###  2 Download and Configure
 ------------
-</br>
-</br> Users can install it with the following steps:
-<install>
+</br><b>2.1 Download</b>
+<pre>
         git clone https://github.com/xjtugenetics/IMNA.git
+</pre>
+
+</br><b>2.2 Configure</b>
+<pre>
 		export IMNA_tk=/path/to/IMNA
-</install>
+</pre>
 
 
 ###  3 Parameter description
