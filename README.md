@@ -255,8 +255,31 @@ out.pdf: Output plot in pdf format
 ![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example4/out.png)
 
 
-###  5 Advantages
-To evaluate the performance of LDBlockShow, we used test VCF files to generate the LD heatmap by using LDBlockShow, Haploview[4], LDheatmap[5] and gpart. The calculated r<sup>2</sup> and D’values of LDBlockShow is the same with other tools. As shown in Figure below, LDBlockShow is more time and memory saving than other tools.
+###  5 License
+> This software is distributed under the terms of GPL 2.0
+<br>
+
+### Source
+> [https://github.com/johnlcd/CIRCScan](https://github.com/johnlcd/CIRCScan)
+<br>
+
+### Contact
+#### Author
+> **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**
+> Key Laboratory of Biomedical Information & Genetics Center, School of Life Science and Technology, Xi'an Jiaotong University, Xi'an, Shaanxi Province, 710049, P. R. China
+> [:email:](yangtielin@mail.xjtu.edu.cn) yangtielin@mail.xjtu.edu.cn
+<br>
+
+### Maintainer
+> **Yi-Xiao Chen**
+> You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
+  when you have any questions, suggestions, comments, etc.
+> Please describe in details, and attach your command line and log messages if possible.
+<br>
+
+
+
+
 </br></br>
 ![Advantages](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Fig/out2.png)
 </br> The above figure shows the comparison of computing cost for LDBlockShow, Ldheatmap, Haploview and gpart. CPU time (A) and memory cost (B) for different methods are shown with a fixed SNP number of 100 and sample size ranging from 2,000 to 60,000. CPU time (C) and memory cost (D) for different methods are shown with a fixed sample size of 2,000 and SNP number ranged from 100 to 1,200. When testing datasets in A-D, both LDBlockShow and gpart finished the analyses within reasonable time and memory. We further tested their performance when handling large dataset. CPU time (E) and memory cost (F) for these two methods are shown with a fixed sample size of 100,000 and SNP number ranged from 300 to 2,500. Computation is performed with one thread of an Intel Xeon CPU E5-2630 v4.
