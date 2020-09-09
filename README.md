@@ -256,15 +256,17 @@ out.pdf: Output plot in pdf format
 
 
 ###  5 License
+------------
 > This software is distributed under the terms of GPL 2.0
 </br>
 
 ### Source
-</br>
-> [https://github.com/johnlcd/CIRCScan](https://github.com/johnlcd/CIRCScan)
+------------
+> [https://github.com/xjtugenetics/IMNA](https://github.com/xjtugenetics/IMNA)
 </br>
 
 ### Contact
+------------
 #### Author
 > **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**  
 > Key Laboratory of Biomedical Information & Genetics Center, School of Life Science and Technology, Xi'an Jiaotong University, Xi'an, Shaanxi Province, 710049, P. R. China  
