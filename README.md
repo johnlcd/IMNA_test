@@ -7,12 +7,12 @@
 ------------
 </br><b>2.1 Download</b>
 <pre>
-        git clone https://github.com/xjtugenetics/IMNA.git
+	git clone https://github.com/xjtugenetics/IMNA.git
 </pre>
 
 </br><b>2.2 Configure</b>
 <pre>
-		export IMNA_tk=/path/to/IMNA
+	export IMNA_tk=/path/to/IMNA
 </pre>
 
 
