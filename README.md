@@ -256,20 +256,20 @@ out.pdf: Output plot in pdf format
 
 
 ###  5 License
+</br>
 > This software is distributed under the terms of GPL 2.0
-<br>
 
 ### Source
+</br>
 > [https://github.com/johnlcd/CIRCScan](https://github.com/johnlcd/CIRCScan)
-<br>
 
 ### Contact
 #### Author
 > **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**  
 > Key Laboratory of Biomedical Information & Genetics Center, School of Life Science and Technology, Xi'an Jiaotong University, Xi'an, Shaanxi Province, 710049, P. R. China  
 > [:email:](yangtielin@mail.xjtu.edu.cn) yangtielin@mail.xjtu.edu.cn  
-<br>
 
+</br>
 ### Maintainer
 > **Yi-Xiao Chen**  
 > You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
