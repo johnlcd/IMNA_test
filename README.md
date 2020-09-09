@@ -5,7 +5,7 @@
 
 ###  2 Download and Install
 ------------
-
+</br>
 </br> Users can install it with the following steps:
 <install>
         git clone https://github.com/xjtugenetics/IMNA.git
