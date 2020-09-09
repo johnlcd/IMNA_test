@@ -5,12 +5,12 @@
 
 ###  2 Download and Configure
 ------------
-</br><b>2.1 Download</b>
+</br><b>2.2 Download</b>
 <pre>
 	git clone https://github.com/xjtugenetics/IMNA.git
 </pre>
 
-</br><b>2.2 Configure</b>
+</br><b>2.3 Configure</b>
 <pre>
 	export IMNA_tk=/path/to/IMNA
 </pre>
@@ -260,12 +260,12 @@ out.pdf: Output plot in pdf format
 > This software is distributed under the terms of GPL 2.0
 </br>
 
-### Source
+### 6 Source
 ------------
 > [https://github.com/xjtugenetics/IMNA](https://github.com/xjtugenetics/IMNA)
 </br>
 
-### Contact
+### 7 Contact
 ------------
 #### Author
 > **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**  
@@ -273,7 +273,7 @@ out.pdf: Output plot in pdf format
 > [:email:](yangtielin@mail.xjtu.edu.cn) yangtielin@mail.xjtu.edu.cn  
 </br>
 
-### Maintainer
+#### Maintainer
 > **Yi-Xiao Chen**  
 > You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
   when you have any questions, suggestions, comments, etc.
