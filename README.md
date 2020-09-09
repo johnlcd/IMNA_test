@@ -6,36 +6,12 @@
 ###  2 Download and Install
 ------------
 
-<b> 2.1. linux/MaxOS&nbsp;&nbsp;&nbsp;   [Download](https://github.com/BGI-shenzhen/LDBlockShow/archive/v1.35.tar.gz) </b>
-  
-  </br> <b>2.2 Pre-install</b>
-  </br> LDblockshow is for Linux/Unix/macOS only. Before installing, please make sure the following pre-requirements are ready to use.
-  </br> 1) g++   : g++ with [--std=c++11](https://gcc.gnu.org/) > 4.8+ is recommended
-  </br> 2) zlib  : [zlib](https://zlib.net/) > 1.2.3 is recommended
-  </br> 3) Perl  : The [SVG.pm](https://metacpan.org/release/SVG) in Perl should be installed. LDBlockShow uses this module to plot figures. We have provided a built-in SVG module in the package.
+</br> Users can install it with the following steps:
+<install>
+        git clone https://github.com/xjtugenetics/IMNA.git
+		export IMNA_tk=/path/to/IMNA
+</install>
 
-
-</br> <b>2.3 Install</b>
-</br> Users can install it with the following options:
-</br> Option 1: 
-<pre>
-        git clone https://github.com/BGI-shenzhen/LDBlockShow.git
-        chmod 755 configure  ;  ./configure;
-        make;
-        mv LDBlockShow  bin/;    #     [rm *.o]
-</pre>
-
-</br>**Note:** If failed to link,try to <b>re-install</b> the libraries [**_zlib_**](https://zlib.net/)
-
-</br>Option 2:
-<pre>
-        tar -zxvf  LDBlockShowXXX.tar.gz
-        cd LDBlockShowXXX;  cd src;
-        sh  make.sh                         ## Linux :  [ make ; make clean ]
-        ../bin/LDBlockShow
-</pre>
-**Note:** For <b>macOS</b>, if plink doesn't work, please re-download [**mac _plinks_**](https://www.cog-genomics.org/plink2/) and put it into the directory [LDBlockShowXXX/bin]
-</br>**Note:** If failed to link,try to <b>re-install</b> the libraries [**_zlib_**](https://zlib.net/)
 
 ###  3 Parameter description
 ------------
