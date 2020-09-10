@@ -131,7 +131,6 @@ Usage:
 </br>  
 
 
-
 ###  4. Example
 ------------
 
@@ -149,22 +148,29 @@ Usage:
 </pre>
 
 ![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example1/out.png)
+</br>
 
 
 ###  5. License
 ------------
+</br>  
+
 > This software is distributed under the terms of GPL 2.0
 </br>
 
 
 ###  6. Source
 ------------
+</br>  
+
 > [https://github.com/xjtugenetics/IMNA](https://github.com/xjtugenetics/IMNA)
 </br>
 
 
 ###  7. Contact
 ------------
+</br>  
+
 #### Author
 > **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**  
 > Key Laboratory of Biomedical Information & Genetics Center, School of Life Science and Technology, Xi'an Jiaotong University, Xi'an, Shaanxi Province, 710049, P. R. China  
@@ -174,6 +180,8 @@ Usage:
 
 ###  8. Maintainer
 ------------
+</br>  
+
 > **Yi-Xiao Chen**  
 > You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
   when you have any questions, suggestions, comments, etc.
@@ -183,6 +191,8 @@ Usage:
 
 ###  9. Requiremnets
 ------------
+</br>  
+	
 - Python ( >= 3.2 )
 - **Python** \( recommended: python2.7 \)
 	- numpy( >=1.10.4)
