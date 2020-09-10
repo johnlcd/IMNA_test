@@ -83,7 +83,7 @@ oup                   Prefix of output file
 > ***oup_KDA-module.txt***: Gene module set
 > ***oup_KDA-score.txt***: Gene enrichment score
 
-</br><b>4. SS - Signature score analysis </b>
+</br><b>3.4 SS - Signature score analysis </b>
 ```bash
 Script:
 		4-Combine_bip_SScore.py
@@ -103,7 +103,7 @@ Usage:
 > *** ***: 
 > *** ***: 
 
-</br><b>5. CS - Composite score analysis </b>
+</br><b>3.5 CS - Composite score analysis </b>
 ```bash
 Script:
 		5-Composite_score.py
