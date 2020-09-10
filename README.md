@@ -18,7 +18,8 @@
 
 ###  3. Tutorial
 ------------
-> **Workflow**
+> **Workflow**  
+
 ![workflow.png](https://github.com/xjtugenetics/IMNA/workflow.png)
 
 </br><b>3.1 Export gene module </b>
