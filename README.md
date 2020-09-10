@@ -1,9 +1,9 @@
 # IMNA
-###  1 Introduction
+###  1. Introduction
 > **`IMNA`** is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
 <b>IMNA</b> is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
 
-###  2 Download and Configure
+###  2. Download and Configure
 ------------
 </br><b>2.2 Download</b>
 <pre>
@@ -16,7 +16,7 @@
 </pre>
 
 
-###  3 Usage
+###  3. Usage
 ------------
 </br><b>3.1 LDBlockShow</b>
 </br><b>3.1.1 Main parameter</b>
@@ -199,7 +199,7 @@ out.pdf: Output plot in pdf format
 </pre>
 
 
-###  4 Example
+###  4. Example
 ------------
 
 </br>See more detailed usage in the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>[Chinese Documentation](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/LDBlockShow_Manual_Chinese.pdf)</b>
@@ -255,17 +255,17 @@ out.pdf: Output plot in pdf format
 ![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example4/out.png)
 
 
-###  5 License
+###  5. License
 ------------
 > This software is distributed under the terms of GPL 2.0
 </br>
 
-### 6 Source
+###  6. Source
 ------------
 > [https://github.com/xjtugenetics/IMNA](https://github.com/xjtugenetics/IMNA)
 </br>
 
-### 7 Contact
+###  7. Contact
 ------------
 #### Author
 > **Yi-Xiao Chen**, **Shan-Shan Dong**, **Yan Guo**, **Tie-Lin Yang**  
@@ -273,14 +273,14 @@ out.pdf: Output plot in pdf format
 > [:email:](yangtielin@mail.xjtu.edu.cn) yangtielin@mail.xjtu.edu.cn  
 </br>
 
-### 8. Maintainer
+###  8. Maintainer
 > **Yi-Xiao Chen**  
 > You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
   when you have any questions, suggestions, comments, etc.
 > Please describe in details, and attach your command line and log messages if possible.  
 <br>
 
-### 9. Requiremnets
+###  9. Requiremnets
 ------------
 - Python ( >= 3.2 )
 - **Python** \( recommended: python2.7 \)
@@ -294,5 +294,5 @@ out.pdf: Output plot in pdf format
 
 
 
-###################### No pain, no gains. #############################
+###################### No pain, no gain. #############################
 
