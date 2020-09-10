@@ -193,8 +193,7 @@ Usage:
 ------------
 </br>  
 	
-- Python ( >= 3.2 )
-- **Python** \( recommended: python2.7 \)
+- **Python** ( >= 3.2 )
 	- numpy( >=1.10.4)
 	- mpmath( >=0.19)
 	- pandas( >=0.18.0)
