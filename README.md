@@ -21,9 +21,11 @@
 </br><b>3.1 Export gene module </b>
 
 ```php
-1-Export_module.py
+Script:
+		1-Export_module.py
 		
-        Usage: python3 $IMNA_tk/script/1-Export_module.py <gene module directory> <output prefix>
+Usage:
+		python3 $IMNA_tk/script/1-Export_module.py <gene module directory> <output prefix>
 
 ```
 </br> Details for parameters:
