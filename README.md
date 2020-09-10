@@ -6,7 +6,7 @@
 
 ###  2. Download and Configure
 ------------
-</br><b>2.1 Download</b>
+<b>2.1 Download</b>
 <pre>
 	git clone https://github.com/xjtugenetics/IMNA.git
 </pre>
