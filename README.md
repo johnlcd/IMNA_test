@@ -31,7 +31,6 @@ Usage:
 		python3 ${IMNA_tk}/script/1-Export_module.py <inpmoduledir> <oup>
 
 ```
-</br> 
 
 ##### Details for parameters:  
 <pre>
