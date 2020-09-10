@@ -123,16 +123,6 @@ Usage:
 > *** ***:   
 > *** ***:   
 
-</br><b>3.3 Output files</b>
-<pre>
-out.site.gz: Remained SNPs after filtering [chr site]
-out.blocks.gz: Block file [chr start end block_length SNP_number SNPs]
-out.TriangleV.gz: Region Pairwise R^2/D'
-out.svg: Output plot in SVG format
-out.png: Output plot in png format
-out.pdf: Output plot in pdf format
-</pre>
-
 
 ###  4. Example
 ------------
