@@ -80,7 +80,7 @@ oup                   Prefix of output file
 </pre>
 
 ##### Output file(s):
-> ***oup_KDA-module.txt***: Gene module set
+> ***oup_KDA-module.txt***: Gene module set  
 > ***oup_KDA-score.txt***: Gene enrichment score
 
 </br><b>3.4 SS - Signature score analysis </b>
@@ -100,8 +100,8 @@ Usage:
 </pre>
 
 ##### Output file(s):
-> *** ***: 
-> *** ***: 
+> *** ***:   
+> *** ***:   
 
 </br><b>3.5 CS - Composite score analysis </b>
 ```bash
@@ -120,8 +120,8 @@ Usage:
 </pre>
 
 ##### Output file(s):
-> *** ***: 
-> *** ***: 
+> *** ***:   
+> *** ***:   
 
 </br><b>3.3 Output files</b>
 <pre>
