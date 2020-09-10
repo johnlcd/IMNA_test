@@ -21,10 +21,10 @@
 ------------
 > **Workflow**  
 
-![IMNA workflow](https://github.com/xjtugenetics/IMNA/workflow.png)
+![IMNA workflow](https://github.com/xjtugenetics/IMNA/blob/master/workflow.png)
 
 </br><b>3.1 Export gene module </b>
-```
+```bash
 Script:
 		1-Export_module.py
 		
@@ -47,7 +47,7 @@ outinfo.txt: Module information
 </pre>
 
 </br><b>3.2 </b>
-```php
+```
 Script:
 		2-Constract_bipartite.py
 
@@ -69,7 +69,7 @@ Usage:
 </pre>
 
 </br><b>3.2 </b>
-```php
+```
 Script:
 		
 
@@ -91,7 +91,7 @@ Usage:
 </pre>
 
 </br><b>3.3 </b>
-```php
+```python
 Script:
 		3-KDA_analysis.py
 
