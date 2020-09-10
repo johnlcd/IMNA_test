@@ -29,7 +29,7 @@ Script:
 		1-Export_module.py
 		
 Usage:
-		python3 $IMNA_tk/script/1-Export_module.py <inpmoduledir> <out>
+		python3 ${IMNA_tk}/script/1-Export_module.py <inpmoduledir> <out>
 
 ```
 </br> 
