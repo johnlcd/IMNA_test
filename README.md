@@ -34,18 +34,18 @@ Usage:
 </br> 
 
 > Details for parameters:  
-<pre>
+#<pre>
 inpmoduledir          Directory of all gene module
 oup                   Prefix of output file
-</pre>
+#</pre>
 
 > Output file(s):  
-<pre>
+#<pre>
 *oup.txt*: Gene set (module)
 *oupinfo.txt*: Module information
-</pre>
+#</pre>
 
-</br><b>3.2 </b>
+</br><b>3.2 Constract bipartite based on SNP-gene pairs</b>
 ```bash
 Script:
 		2-Constract_bipartite.py
@@ -87,7 +87,8 @@ oup                   Prefix of output file
 
 > Output file(s):
 <pre>
-
+*oup_KDA-module.txt*: 
+*oup_KDA-score.txt*: 
 </pre>
 
 </br><b>3.4 </b>
