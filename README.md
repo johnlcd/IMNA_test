@@ -28,7 +28,7 @@ Usage:
 
 ```
 </br> 
-> Details for parameters:
+> Details for parameters:  
 <pre>
 gene module directory          Directory of all gene module
 output prefix                  Prefix of output file
