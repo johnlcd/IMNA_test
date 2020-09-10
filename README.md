@@ -3,6 +3,7 @@
 > **`IMNA`** is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
 <b>IMNA</b> is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
 
+
 ###  2. Download and Configure
 ------------
 </br><b>2.1 Download</b>
@@ -20,10 +21,10 @@
 ------------
 > **Workflow**  
 
-![workflow.png](https://github.com/xjtugenetics/IMNA/workflow.png)
+![IMNA workflow](https://github.com/xjtugenetics/IMNA/workflow.png)
 
 </br><b>3.1 Export gene module </b>
-```php
+```
 Script:
 		1-Export_module.py
 		
@@ -191,10 +192,12 @@ out.pdf: Output plot in pdf format
 > This software is distributed under the terms of GPL 2.0
 </br>
 
+
 ###  6. Source
 ------------
 > [https://github.com/xjtugenetics/IMNA](https://github.com/xjtugenetics/IMNA)
 </br>
+
 
 ###  7. Contact
 ------------
@@ -204,12 +207,14 @@ out.pdf: Output plot in pdf format
 > [:email:](yangtielin@mail.xjtu.edu.cn) yangtielin@mail.xjtu.edu.cn  
 </br>
 
+
 ###  8. Maintainer
 > **Yi-Xiao Chen**  
 > You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
   when you have any questions, suggestions, comments, etc.
 > Please describe in details, and attach your command line and log messages if possible.  
-<br>
+</br>
+
 
 ###  9. Requiremnets
 ------------
@@ -222,7 +227,6 @@ out.pdf: Output plot in pdf format
 	- rpy2( >= 2.9.0)
 - **R** \( >= 3.3.2 \)
 </br>
-
 
 
 ###################### No pain, no gain. #############################
