@@ -33,13 +33,13 @@ Usage:
 ```
 </br> 
 
-> Details for parameters:  
+##### Details for parameters:  
 <pre>
 inpmoduledir          Directory of all gene module
 oup                   Prefix of output file
 </pre>
 
-> Output file(s):  
+##### Output file(s):  
 > ***oup.txt***: Gene set (module)  
 > ***oupinfo.txt***: Module information  
 
