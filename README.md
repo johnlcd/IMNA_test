@@ -23,7 +23,7 @@
 
 ###  3. Tutorial
 ------------
-</br>
+</br>  
 - **Workflow**  
 
 ![IMNA workflow](https://github.com/xjtugenetics/IMNA/blob/master/workflow.png)
