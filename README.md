@@ -5,19 +5,22 @@
 
 ###  2. Download and Configure
 ------------
-</br><b>2.2 Download</b>
+</br><b>2.1 Download</b>
 <pre>
 	git clone https://github.com/xjtugenetics/IMNA.git
 </pre>
 
-</br><b>2.3 Configure</b>
+</br><b>2.2 Configure</b>
 <pre>
 	export IMNA_tk=/path/to/IMNA
 </pre>
 
 
-###  3. Usage
+###  3. Tutorial
 ------------
+> **Workflow**
+![workflow.png](https://github.com/xjtugenetics/IMNA/workflow.png)
+
 </br><b>3.1 Export gene module </b>
 ```php
 Script:
@@ -44,7 +47,7 @@ outinfo.txt: Module information
 </br><b>3.2 </b>
 ```php
 Script:
-		
+		2-Constract_bipartite.py
 
 Usage:
 		
@@ -88,7 +91,7 @@ Usage:
 </br><b>3.3 </b>
 ```php
 Script:
-		
+		3-KDA_analysis.py
 
 Usage:
 		
@@ -110,7 +113,7 @@ Usage:
 </br><b>3.4 </b>
 ```php
 Script:
-		
+		4-Combine_bip_SScore.py
 
 Usage:
 		
@@ -132,7 +135,7 @@ Usage:
 </br><b>3.5 </b>
 ```php
 Script:
-		
+		5-Composite_score.py
 
 Usage:
 		
