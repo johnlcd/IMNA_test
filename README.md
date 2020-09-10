@@ -34,16 +34,12 @@ Usage:
 </br> 
 
 > Details for parameters:  
-#<pre>
 inpmoduledir          Directory of all gene module
 oup                   Prefix of output file
-#</pre>
 
 > Output file(s):  
-#<pre>
-*oup.txt*: Gene set (module)
-*oupinfo.txt*: Module information
-#</pre>
+***oup.txt***: Gene set (module)
+***oupinfo.txt***: Module information
 
 </br><b>3.2 Constract bipartite based on SNP-gene pairs</b>
 ```bash
