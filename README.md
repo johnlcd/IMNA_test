@@ -5,6 +5,7 @@
 
 > **`IMNA`** is a integrative multi-omics network-based approach to capture genetic-driven regulatory networks for human complex diseases. This method can combine functional data from multiple biological scales to understand molecular mechanisms of disease and identify potential key genes. This pipeline provide several scripts facilitating data access, integration and analysis.
 
+</br>
 
 ###  2. Download and Configure
 ------------
@@ -18,9 +19,11 @@
 	export IMNA_tk=/path/to/IMNA
 </pre>
 
+</br>
 
 ###  3. Tutorial
 ------------
+</br>
 - **Workflow**  
 
 ![IMNA workflow](https://github.com/xjtugenetics/IMNA/blob/master/workflow.png)
