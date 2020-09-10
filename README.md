@@ -18,54 +18,18 @@
 
 ###  3. Usage
 ------------
-</br><b>3.1 LDBlockShow</b>
-</br><b>3.1.1 Main parameter</b>
+</br><b>3.1 Export gene module </b>
 
 ```php
- ./bin/LDBlockShow
-
-        Usage: LDBlockShow  -InVCF  <in.vcf.gz>  -OutPut <outPrefix>  -Region  chr1:10000-20000
-
-                -InVCF          <str>     Input SNP VCF Format
-                -OutPut         <str>     OutPut File of LD Blocks
-                -Region         <str>     In One Region to show LD info svg Figure
-
-
-                -SeleVar        <int>     Select statistic for deal. 1: D' 2: R^2 3/4: Both [1]
-                -SubPop         <str>     SubGroup Sample File List[ALLsample]
-                -BlockType      <int>     method to detect Block [beta] [1]
-                                           1. Block by PLINK (Gabriel method)
-                                           2. Solid Spine of LD RR/D' 3. Blockcut with self-defined RR/D'
-                                           4. FixBlock by input blocks files 5. No Block
-
-                -InGWAS         <str>     InPut GWAS Pvalue File(chr site Pvalue)
-                -InGFF          <str>     InPut GFF3 file to show Gene CDS and name
-
-                -BlockCut       <float>   'Strong LD' cutoff and ratio for BlockType3[0.85:0.90]
-                -FixBlock       <str>      Input fixed block region
-                -MerMinSNPNum   <int>      merger color grids when SNPnumber over N[50]
-
-                -help                      Show more Parameters and help [hewm2008 v1.34]
+1-Export_module.py
+		
+        Usage: python3 $IMNA_tk/script/1-Export_module.py <gene module directory> <output prefix>
 
 ```
-</br> Details for above parameters:
+</br> Details for parameters:
 <pre>
--InVCF          The input file in VCF format
--OutPut         The output file directory and output file name prefix (e.g., /path/pop1)
--Region         The defined region to show the LD heatmap (format: chr:start:end)
-
--SeleVar        The LD measurement (1: D' 2: R^2 3/4: Both R^2 and D'), the default is 1.
--SubPop         A sample list for subgroup analysis
--BlockType      The definition of blocks. The default 1 is called by PLINK1 to generate the block defined by Gabriel et al.2. Solid spine of LD3 is also supported [2]. Users can also define their own cutoff of r2 and D’ for blocks [3] combined with the option of "-BlockCut" or supply their own block region definition [4] combined with the option of "-FixBlock". 5 can be used as input if users prefer to not show the block region.
-
--InGWAS         The statistics file (e.g., association statistics, but other values such as Tajima’s D can also be accepted) for generate plot together with the LD plot. File formatted as: [chr position Pvalue]
--InGFF          Input GFF3 format file for genomic region annotation
-
--BlockCut       For block type 3, the defined cutoff for strong LD, and the ratio of strong LD SNP in one block. Default is 0.85:0.9. That’s, if the user chose D’in the -SeleVar option, then in one block, the ratio of SNP pairs with D’over 0.85 is 0.9.
--FixBlock       For block type 4, users can use this option to supply a self-defined block region. The file contains three columns, including chromosome, block region start position, and block region end position.
--MerMinSNPNum   The minimum SNP number to merge color grids with the same color. Default is 50. Details please see Fig 1 in this manual.
-
--help           Show more parameters
+gene module directory          Directory of all gene module
+output prefix                  Prefix of output file
 </pre>
 
 </br><b>3.1.2 Other parameters</b>
@@ -216,43 +180,6 @@ out.pdf: Output plot in pdf format
 </pre>
 
 ![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example1/out.png)
-
-
-* Example 2)   Output LDHeatMap combined with GWAS statistics
-```
-#../../bin/LDBlockShow  -InVCF ../Example1/Test.vcf.gz -OutPut out -Region chr11:24100000:24200000 -InGWAS gwas.pvalue  -OutPng
-../../bin/LDBlockShow   -InVCF ../Example1/Test.vcf.gz -OutPut out -Region chr11:24100000:24200000 -InGWAS gwas.pvalue  -OutPng  -SeleVar 4
-## you can run ShowLDSVG with more parameters to optimize the plot  ##
-# ../../bin/ShowLDSVG    -InPreFix       out     -OutPut out     -InGWAS gwas.pvalue -Cutline  7  -ShowNum -PointSize 3 -OutPng
-```
-
-![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example2/out.png)
-
-
-* Example 3) show Figure with genomic annotation
-```
-#../../bin/LDBlockShow   -InVCF   ../Example1/Test.vcf.gz    -OutPut  out -InGWAS gwas.pvalue  -InGFF  In.gff   -Region  chr11:24100000:24200000 -OutPng -SeleVar 1   
-../../bin/LDBlockShow   -InVCF   ../Example1/Test.vcf.gz    -OutPut  out -InGWAS gwas.pvalue  -InGFF  In.gff   -Region  chr11:24100000:24200000 -OutPng -SeleVar 2
-## you can run ShowLDSVG with more parameters to optimize the plot  ##
-#../../bin/ShowLDSVG    -InPreFix out -OutPut out.svg -InGWAS gwas.pvalue  -Cutline  7  -InGFF  In.gff  -crGene yellow:lightblue:pink:orange -showNum -OutPng
-#../../bin/ShowLDSVG    -InPreFix       out     -OutPut out.svg         -InGFF  In.gff
-#../../bin/ShowLDSVG    -InPreFix out -OutPut out.svg -InGWAS gwas.pvalue  -Cutline  7  -InGFF  In.gff  -crGene yellow:lightblue:pink:orange -showNum -OutPng  -SpeSNPName Spe.snp  -ShowGWASSpeSNP
-```
-
-![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example3/out.png)
-
-
-* Example 4) show Figure (heatmap+Annotation+GWAS similar to LocusZoom)
-```
-../../bin/LDBlockShow   -InVCF   ../Example1/Test.vcf.gz    -OutPut  out -InGWAS ../Example3/gwas.pvalue  -InGFF  ../Example3/In.gff   -Region  chr11:24100000:24200000 -OutPng -SeleVar 4 -TopSite
-#  [-SeleVar 3]: GWAS with RR ,heatmap with D'.  [-SeleVar 4]: GWAS with D' ,heatmap with RR.
-## you can run ShowLDSVG with more parameters to optimize the plot with para [-TopSite]  ##
-../../bin/ShowLDSVG    -InPreFix out -OutPut out.svg -InGWAS ../Example3/gwas.pvalue  -Cutline  7  -InGFF  ../Example3/In.gff  -crGene yellow:lightblue:pink:orange -showNum -OutPng  -SpeSNPName ../Example3/Spe.snp  -ShowGWASSpeSNP  -TopSite
-#../../bin/ShowLDSVG    -InPreFix out -OutPut out.svg -InGWAS ../Example3/gwas.pvalue  -Cutline  7  -InGFF ../Example3/In.gff  -crGene yellow:lightblue:pink:orange -showNum -OutPng  -SpeSNPName ../Example3/Spe.snp  -ShowGWASSpeSNP  -TopSite  chr11:24142660
-
-```
-
-![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example4/out.png)
 
 
 ###  5. License
