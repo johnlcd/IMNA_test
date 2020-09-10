@@ -47,7 +47,7 @@ outinfo.txt: Module information
 </pre>
 
 </br><b>3.2 </b>
-```
+```shell
 Script:
 		2-Constract_bipartite.py
 
@@ -91,7 +91,7 @@ Usage:
 </pre>
 
 </br><b>3.3 </b>
-```python
+```
 Script:
 		3-KDA_analysis.py
 
