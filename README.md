@@ -1,7 +1,6 @@
 # IMNA
 ###  1. Introduction
-> **`IMNA`** is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
-<b>IMNA</b> is a fast and effective tool to generate linkage disequilibrium (LD) heatmap from VCF files. It is more time and memory saving than other current tools. LDBlockShow can generate the plots of LD heatmap and interested statistics or annotation results simultaneously. In addition, it also supports subgroup analysis.
+> **`IMNA`** is a integrative multi-omics network-based approach to capture genetic-driven regulatory networks for human complex diseases. This method can combine functional data from multiple biological scales to understand molecular mechanisms of disease and identify potential key genes. This pipeline provide several scripts facilitating data access, integration and analysis.
 
 
 ###  2. Download and Configure
@@ -23,13 +22,13 @@
 
 ![IMNA workflow](https://github.com/xjtugenetics/IMNA/blob/master/workflow.png)
 
-</br><b>3.1 Export gene module </b>
+</br><b>3.1 Export gene set and module information </b>
 ```bash
 Script:
 		1-Export_module.py
 		
 Usage:
-		python3 ${IMNA_tk}/script/1-Export_module.py <inpmoduledir> <out>
+		python3 ${IMNA_tk}/script/1-Export_module.py <inpmoduledir> <op>
 
 ```
 </br> 
@@ -37,66 +36,44 @@ Usage:
 > Details for parameters:  
 <pre>
 inpmoduledir          Directory of all gene module
-out                   Prefix of output file
+op                    Prefix of output file
 </pre>
 
 > Output file(s):  
 <pre>
-out.txt: Gene set (module)
-outinfo.txt: Module information
+op.txt: Gene set (module)
+opinfo.txt: Module information
 </pre>
 
 </br><b>3.2 </b>
-```shell
+```bash
 Script:
 		2-Constract_bipartite.py
 
 Usage:
-		
+		python3 ${IMNA_tk}/script/2-Constract_bipartite.py <GS pair> <op>
 
 ```
 </br>
 
 > Details for parameters:
 <pre>
-
-
+GS pair               Gene-SNP pairs 
+op                    Prefix of output file
 </pre>
 
 > Output file(s):
 <pre>
-
-</pre>
-
-</br><b>3.2 </b>
-```
-Script:
-		
-
-Usage:
-		
-
-```
-</br>
-
-> Details for parameters:
-<pre>
-
-
-</pre>
-
-> Output file(s):
-<pre>
-
+op_DG_gene.nor.csv: Normalized gene degree score
 </pre>
 
 </br><b>3.3 </b>
-```
+```bash
 Script:
 		3-KDA_analysis.py
 
 Usage:
-		
+		python3 ${IMNA_tk}/script/3-KDA_analysis.py 
 
 ```
 </br>
@@ -113,12 +90,12 @@ Usage:
 </pre>
 
 </br><b>3.4 </b>
-```php
+```bash
 Script:
 		4-Combine_bip_SScore.py
 
 Usage:
-		
+		python3 ${IMNA_tk}/script/
 
 ```
 </br>
@@ -135,12 +112,12 @@ Usage:
 </pre>
 
 </br><b>3.5 </b>
-```php
+```bash
 Script:
 		5-Composite_score.py
 
 Usage:
-		
+		python3 ${IMNA_tk}/script/
 
 ```
 </br>
