@@ -19,7 +19,6 @@
 ###  3. Usage
 ------------
 </br><b>3.1 Export gene module </b>
-> 
 ```php
 Script:
 		1-Export_module.py
@@ -28,7 +27,8 @@ Usage:
 		python3 $IMNA_tk/script/1-Export_module.py <gene module directory> <output prefix>
 
 ```
-</br> Details for parameters:
+</br> 
+> Details for parameters:
 <pre>
 gene module directory          Directory of all gene module
 output prefix                  Prefix of output file
