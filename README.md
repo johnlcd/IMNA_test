@@ -28,7 +28,7 @@ Script:
 		1-Export_module.py
 		
 Usage:
-		python3 ${IMNA_tk}/script/1-Export_module.py <inpmoduledir> <op>
+		python3 ${IMNA_tk}/script/1-Export_module.py <inpmoduledir> <oup>
 
 ```
 </br> 
@@ -36,13 +36,13 @@ Usage:
 > Details for parameters:  
 <pre>
 inpmoduledir          Directory of all gene module
-op                    Prefix of output file
+oup                   Prefix of output file
 </pre>
 
 > Output file(s):  
 <pre>
-op.txt: Gene set (module)
-opinfo.txt: Module information
+*oup.txt*: Gene set (module)
+*oupinfo.txt*: Module information
 </pre>
 
 </br><b>3.2 </b>
@@ -51,7 +51,7 @@ Script:
 		2-Constract_bipartite.py
 
 Usage:
-		python3 ${IMNA_tk}/script/2-Constract_bipartite.py <GS pair> <op>
+		python3 ${IMNA_tk}/script/2-Constract_bipartite.py <GS pair> <oup>
 
 ```
 </br>
@@ -59,29 +59,30 @@ Usage:
 > Details for parameters:
 <pre>
 GS pair               Gene-SNP pairs 
-op                    Prefix of output file
+oup                   Prefix of output file
 </pre>
 
 > Output file(s):
 <pre>
-op_DG_gene.nor.csv: Normalized gene degree score
+*op_DG_gene.nor.csv*: Normalized gene degree score
 </pre>
 
-</br><b>3.3 </b>
+</br><b>3.3 KDA analysis </b>
 ```bash
 Script:
 		3-KDA_analysis.py
 
 Usage:
-		python3 ${IMNA_tk}/script/3-KDA_analysis.py 
+		python3 ${IMNA_tk}/script/3-KDA_analysis.py <GS pair> <modulefile> <oup>
 
 ```
 </br>
 
 > Details for parameters:
 <pre>
-
-
+GS pair               Gene-SNP pairs
+modulefile            module file, conducted by 1-Export_module.py
+oup                   Prefix of output file
 </pre>
 
 > Output file(s):
