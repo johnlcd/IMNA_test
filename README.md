@@ -27,8 +27,8 @@ Usage:
 		python3 $IMNA_tk/script/1-Export_module.py <gene module directory> <output prefix>
 
 ```
-</br> 
 > Details for parameters:  
+</br> 
 <pre>
 gene module directory          Directory of all gene module
 output prefix                  Prefix of output file
