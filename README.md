@@ -1,5 +1,6 @@
 # IMNA
 ###  1. Introduction
+------------
 > **`IMNA`** is a integrative multi-omics network-based approach to capture genetic-driven regulatory networks for human complex diseases. This method can combine functional data from multiple biological scales to understand molecular mechanisms of disease and identify potential key genes. This pipeline provide several scripts facilitating data access, integration and analysis.
 
 
@@ -51,20 +52,17 @@ Usage:
 		python3 ${IMNA_tk}/script/2-Constract_bipartite.py <GS pair> <oup>
 
 ```
-</br>
 
-> Details for parameters:
+##### Details for parameters:
 <pre>
 GS pair               Gene-SNP pairs 
 oup                   Prefix of output file
 </pre>
 
-> Output file(s):
-<pre>
-*op_DG_gene.nor.csv*: Normalized gene degree score
-</pre>
+##### Output file(s):
+> ***oup_DG_gene.nor.csv***: Normalized gene degree score
 
-</br><b>3.3 KDA analysis </b>
+</br><b>3.3 KDA - Key driver analysis </b>
 ```bash
 Script:
 		3-KDA_analysis.py
@@ -73,22 +71,19 @@ Usage:
 		python3 ${IMNA_tk}/script/3-KDA_analysis.py <GS pair> <modulefile> <oup>
 
 ```
-</br>
 
-> Details for parameters:
+##### Details for parameters:
 <pre>
 GS pair               Gene-SNP pairs
 modulefile            module file, conducted by 1-Export_module.py
 oup                   Prefix of output file
 </pre>
 
-> Output file(s):
-<pre>
-*oup_KDA-module.txt*: 
-*oup_KDA-score.txt*: 
-</pre>
+##### Output file(s):
+> ***oup_KDA-module.txt***: Gene module set
+> ***oup_KDA-score.txt***: Gene enrichment score
 
-</br><b>3.4 </b>
+</br><b>4. SS - Signature score analysis </b>
 ```bash
 Script:
 		4-Combine_bip_SScore.py
@@ -97,20 +92,18 @@ Usage:
 		python3 ${IMNA_tk}/script/
 
 ```
-</br>
 
-> Details for parameters:
+##### Details for parameters:
 <pre>
 
 
 </pre>
 
-> Output file(s):
-<pre>
+##### Output file(s):
+> *** ***: 
+> *** ***: 
 
-</pre>
-
-</br><b>3.5 </b>
+</br><b>5. CS - Composite score analysis </b>
 ```bash
 Script:
 		5-Composite_score.py
@@ -119,19 +112,16 @@ Usage:
 		python3 ${IMNA_tk}/script/
 
 ```
-</br>
 
-> Details for parameters:
+##### Details for parameters:
 <pre>
 
 
 </pre>
 
-> Output file(s):
-<pre>
-
-</pre>
-
+##### Output file(s):
+> *** ***: 
+> *** ***: 
 
 </br><b>3.3 Output files</b>
 <pre>
@@ -185,6 +175,7 @@ out.pdf: Output plot in pdf format
 
 
 ###  8. Maintainer
+------------
 > **Yi-Xiao Chen**  
 > You can contact [:email:](aaa@stu.xjtu.edu.cn) aaa@stu.xjtu.edu.cn
   when you have any questions, suggestions, comments, etc.
