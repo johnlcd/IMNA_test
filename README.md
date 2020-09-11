@@ -41,13 +41,13 @@ Usage:
 
 ##### Details for parameters:  
 <pre>
-inpmoduledir          Directory of all gene module
+inpmoduledir          Directory of all gene module (gene list)
 oup                   Prefix of output file
 </pre>
 
 ##### Output file(s):  
 > ***oup.txt***: Gene set (module)  
-> ***oupinfo.txt***: Module information  
+> ***oup_info.txt***: Module information  
 
 </br><b>3.2 Constract bipartite based on SNP-gene pairs</b>
 ```bash
@@ -138,11 +138,34 @@ oup                   Prefix of output file
 ------------
 </br>
 
-* Calculate gene composition score of 6 gene set modlue accoding to gene interaction of PPI and GIANT netwrok
+* Calculate gene composition score of 6 gene set modlue accoding to gene interaction from PPI and GIANT netwrok
 
 <pre>
-Step1:
-		python3 ${IMNA_tk}/script/1-Export_module.py ${IMNA_tk}/data/geneset
+###Step1:
+		python3 ${IMNA_tk}/script/1-Export_module.py ${IMNA_tk}/data/geneset module
+
+        ## "module.txt"
+		gene	module	moduleset
+		SLC15A1	101	1
+		FLOT1	101	1
+		MTMR9	101	1
+		C14orf135	101	1
+		CMTM6	101	1
+		DAAM1	101	1
+		HOXA10	101	1
+		ZNF84	101	1
+		GMPR	101	1
+
+        ## "module_info.txt"
+		module	name
+		101	263-signatures-ori.txt
+		102	100-signatures-ori.txt
+		103	300-signatures-ori.txt
+		104	39-signatures-ori.txt
+		105	126-signature-ori.txt
+		106	14-signatures-ori.txt
+
+
 </pre>
 
 ![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example1/out.png)
