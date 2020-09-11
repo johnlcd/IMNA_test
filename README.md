@@ -66,7 +66,9 @@ oup                   Prefix of output file
 </pre>
 
 ##### Output file(s):
-> ***oup_DG_gene.nor.csv***: Normalized gene degree score
+> ***oup_DG_snp.txt***: Raw SNP degree score  
+> ***oup_DG_gene.txt***: Raw gene degree score  
+> ***oup_DG_gene.nor.txt***: Normalized gene degree score  
 
 </br><b>3.3 KDA - Key driver analysis </b>
 ```bash
