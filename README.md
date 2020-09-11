@@ -141,7 +141,8 @@ oup                   Prefix of output file
 * Calculate gene composition score of 6 gene set modlue accoding to gene interaction from PPI and GIANT netwrok
 
 <pre>
-###Step1:
+###Step1:  
+
 		python3 ${IMNA_tk}/script/1-Export_module.py ${IMNA_tk}/data/geneset module
 
         ## "module.txt"
@@ -164,11 +165,97 @@ oup                   Prefix of output file
 		104	39-signatures-ori.txt
 		105	126-signature-ori.txt
 		106	14-signatures-ori.txt
+</pre>
+<pre>
+###Step2:  
+
+		python3 ${IMNA_tk}/script/2-Constract_bipartite.py snp.gene.pairs bip
+
+		## "snp.gene.pairs"
+		ENTREZID	SNP
+		5243	rs185481544
+		11086	rs28465148
+		11086	rs7669284
+		11086	rs11934547
+		11086	rs28436676
+		11086	rs59826661
+		11086	rs4469051
+		11086	rs7669051
+		11086	rs4459969
+
+		## "bip_DG_snp.txt"
+		DG	Node
+		0.02097902097902098	rs62064394
+		0.006993006993006993	rs117404018
+		0.006993006993006993	rs117916627
+		0.006993006993006993	rs139268110
+		0.006993006993006993	rs112746008
+		0.006993006993006993	rs34719019
+		0.006993006993006993	rs117187923
+		0.006993006993006993	rs114433718
+		0.02097902097902098	rs12150223
+
+		## "bip_DG_gene.txt"
+		DG	Node
+		0.00022660321776569228	580
+		0.00022660321776569228	752
+		0.00022660321776569228	148345
+		0.00022660321776569228	246744
+		0.00022660321776569228	1021
+		0.00022660321776569228	1267
+		0.1907999093587129	1394
+		0.00045320643553138455	1545
+		0.00022660321776569228	83468
+
+		## "bip_DG_gene.nor.csv"
+		DG	Node	Norm
+		0.22003172445048721	284058	1.0
+		0.1907999093587129	1394	0.8670103092783505
+		0.1470654883299343	4137	0.6680412371134021
+		0.10151824155903014	9884	0.4608247422680412
+		0.10061182868796738	474170	0.4567010309278351
+		0.09811919329254476	51326	0.44536082474226807
+		0.05030591434398369	389170	0.22783505154639178
+		0.04146838885112169	8631	0.18762886597938144
+		0.024699750736460458	100506084	0.11134020618556702
+
+
+###Step3:  
+
+		python3 ${IMNA_tk}/script/3-KDA_analysis.py PPI.txt  module.txt  PPI-KDA
+		python3 ${IMNA_tk}/script/3-KDA_analysis.py GIANT.txt  module.txt  GIANT-KDA
+
+		## ""
+
+		## ""
+
+		## ""
+
+
+###Step4:  
+
+		python3 ${IMNA_tk}/script/
+
+		## ""
+
+		## ""
+
+		## ""
+
+
+###Step5:  
+
+		python3 ${IMNA_tk}/script/
+
+		## ""
+
+		## ""
+
+		## ""
 
 
 </pre>
 
-![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example1/out.png)
 </br>
 
 
