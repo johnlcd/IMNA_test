@@ -140,7 +140,7 @@ oup                   Prefix of output file
 
 * Calculate gene composition score of 6 gene set modlue accoding to gene interaction from PPI and GIANT netwrok
 
-<pre>
+```sh
 ###Step1:  
 
 		python3 ${IMNA_tk}/script/1-Export_module.py ${IMNA_tk}/data/geneset module
@@ -165,8 +165,8 @@ oup                   Prefix of output file
 		104	39-signatures-ori.txt
 		105	126-signature-ori.txt
 		106	14-signatures-ori.txt
-</pre>
-<pre>
+```
+```
 ###Step2:  
 
 		python3 ${IMNA_tk}/script/2-Constract_bipartite.py snp.gene.pairs bip
@@ -254,7 +254,7 @@ oup                   Prefix of output file
 		## ""
 
 
-</pre>
+```
 
 </br>
 
