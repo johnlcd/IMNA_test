@@ -136,18 +136,13 @@ oup                   Prefix of output file
 
 ###  4. Example
 ------------
+</br>
 
-</br>See more detailed usage in the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>[Chinese Documentation](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/LDBlockShow_Manual_Chinese.pdf)</b>
-</br>See more detailed usage in the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>[English Documentation](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/LDBlockShow_Manual_English.pdf)</b>
-</br>See the example directory and  Manual.pdf for more detail.
-
-
-* Example 1)  show Figure with Defaut LD Blocks
+* Calculate gene composition score of 6 gene set modlue accoding to gene interaction of PPI and GIANT netwrok
 
 <pre>
-#../../bin/LDBlockShow   -InVCF Test.vcf.gz   -OutPut  out   -Region  chr11:24100000:24200000  -OutPng -SeleVar 1
-../../bin/LDBlockShow   -InVCF Test.vcf.gz   -OutPut  out   -Region  chr11:24100000:24200000  -OutPng -SeleVar 2
-# [-SeleVar 1] is D',[-SeleVar 2] is RR ,[-SeleVar 3] are RR and D',[-SeleVar 4] are D' and RR # the default is D'
+Step1:
+		python3 ${IMNA_tk}/script/1-Export_module.py ${IMNA_tk}/data/geneset
 </pre>
 
 ![out.png](https://github.com/BGI-shenzhen/LDBlockShow/blob/master/example/Example1/out.png)
