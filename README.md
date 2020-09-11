@@ -147,7 +147,7 @@ oup                   Prefix of output file
 
 		python3 ${IMNA_tk}/script/1-Export_module.py ${IMNA_tk}/data/geneset module
 
-        ## "module.txt"
+		## "module.txt"
 		gene	module	moduleset
 		SLC15A1	101	1
 		FLOT1	101	1
@@ -159,7 +159,7 @@ oup                   Prefix of output file
 		ZNF84	101	1
 		GMPR	101	1
 
-        ## "module_info.txt"
+		## "module_info.txt"
 		module	name
 		101	263-signatures-ori.txt
 		102	100-signatures-ori.txt
