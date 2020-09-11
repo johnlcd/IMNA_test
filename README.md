@@ -89,7 +89,7 @@ oup                   Prefix of output file
 
 ##### Output file(s):
 > ***oup_KDA-module.txt***: Gene module set  
-> ***oup_KDA-score.txt***: Gene enrichment score
+> ***oup_KDA-score.txt***: Gene enrichment score  
 
 </br><b>3.4 SS - Signature score analysis </b>
 ```bash
@@ -97,19 +97,19 @@ Script:
 		4-Combine_bip_SScore.py
 
 Usage:
-		python3 ${IMNA_tk}/script/4-Combine_bip_SScore.py 
+		python3 ${IMNA_tk}/script/4-Combine_bip_SScore.py <inter_score> <module> <oup>
 
 ```
 
 ##### Details for parameters:
 <pre>
-
-
+inter_score           Interaction score of database (PPI, GIANT)
+module                Gene set module (from step 1)
+oup                   Prefix of output file
 </pre>
 
 ##### Output file(s):
-> *** ***:   
-> *** ***:   
+> ***oup_SScore.txt***: Combined gene signiture score  
 
 </br><b>3.5 CS - Composite score analysis </b>
 ```bash
@@ -117,19 +117,20 @@ Script:
 		5-Composite_score.py
 
 Usage:
-		python3 ${IMNA_tk}/script/5-Composite_score.py 
+		python3 ${IMNA_tk}/script/5-Composite_score.py <PPI_SScore> <GIANT_SScore> <oup>
 
 ```
 
 ##### Details for parameters:
 <pre>
-
-
+PPI_SScore            Gene signiture score of PPI network
+GIANT_SScore          Gene signiture score of GIANT network
+oup                   Prefix of output file
 </pre>
 
 ##### Output file(s):
-> *** ***:   
-> *** ***:   
+> ***oup_Composite_score.txt***: Gene composite score (PPI and GIANT network)  
+
 </br>  
 
 
