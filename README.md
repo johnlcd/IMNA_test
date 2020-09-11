@@ -104,7 +104,7 @@ Usage:
 ##### Details for parameters:
 <pre>
 inter_score           Interaction score of database (PPI, GIANT)
-module                Gene set module (from step 1)
+module                Gene set module (step 1 output)
 oup                   Prefix of output file
 </pre>
 
@@ -123,8 +123,8 @@ Usage:
 
 ##### Details for parameters:
 <pre>
-PPI_SScore            Gene signiture score of PPI network
-GIANT_SScore          Gene signiture score of GIANT network
+PPI_SScore            Gene signiture score of PPI network (step 4 output)
+GIANT_SScore          Gene signiture score of GIANT network (step 4 output)
 oup                   Prefix of output file
 </pre>
 
