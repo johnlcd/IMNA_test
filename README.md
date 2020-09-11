@@ -95,7 +95,7 @@ Script:
 		4-Combine_bip_SScore.py
 
 Usage:
-		python3 ${IMNA_tk}/script/
+		python3 ${IMNA_tk}/script/4-Combine_bip_SScore.py 
 
 ```
 
@@ -115,7 +115,7 @@ Script:
 		5-Composite_score.py
 
 Usage:
-		python3 ${IMNA_tk}/script/
+		python3 ${IMNA_tk}/script/5-Composite_score.py 
 
 ```
 
