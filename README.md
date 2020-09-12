@@ -312,7 +312,7 @@ oup                   Prefix of output file
 ```sh
 ###Step5:  
 
-		python3 ${IMNA_tk}/script/5-Composite_score.py PPI_SScore.txt GIANT_SScore.txt combined-result
+		python3 ${IMNA_tk}/script/5-Composite_score.py PPI_SScore.txt GIANT_SScore.txt KDA-GIANT-PPI
 
 		## "KDA-GIANT-PPI_Composite_score.txt"
 		SYMBOL	norm_x	norm_y	mean	score
